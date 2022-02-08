@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "NotePadDB", "NotePadDB\NotePadDB.sqlproj", "{491FEA47-9AE6-4950-AB4C-6546ABDEFF3C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataLibrary", "DataLibrary\DataLibrary.csproj", "{FB1D49AD-90F9-4B05-851C-23F3A9AA3157}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{491FEA47-9AE6-4950-AB4C-6546ABDEFF3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{491FEA47-9AE6-4950-AB4C-6546ABDEFF3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{491FEA47-9AE6-4950-AB4C-6546ABDEFF3C}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{491FEA47-9AE6-4950-AB4C-6546ABDEFF3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{491FEA47-9AE6-4950-AB4C-6546ABDEFF3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{491FEA47-9AE6-4950-AB4C-6546ABDEFF3C}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{FB1D49AD-90F9-4B05-851C-23F3A9AA3157}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB1D49AD-90F9-4B05-851C-23F3A9AA3157}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB1D49AD-90F9-4B05-851C-23F3A9AA3157}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB1D49AD-90F9-4B05-851C-23F3A9AA3157}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {033A0BDF-7DE4-4C33-A2BF-11C45A7517FC}
+	EndGlobalSection
+EndGlobal
