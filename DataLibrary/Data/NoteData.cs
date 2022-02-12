@@ -35,13 +35,13 @@ namespace DataLibrary.Data
             return p.Get<int>("Id");
         }
 
-        public Task<int> UpdateNoteStatus(int noteId, string noteStatus)
+        public Task<int> UpdateNote(int noteId, string noteDescription)
         {
-            return _dataAccess.SaveData("dbo.spNotes_UpdateStatus",
+            return _dataAccess.SaveData("dbo.spNotes_Update",
                                         new
                                         {
                                             Id = noteId,
-                                            Status = noteStatus
+                                            Description = noteDescription
                                         },
                                         _connectionString.SqlConnectionName);
         }
@@ -57,16 +57,11 @@ namespace DataLibrary.Data
                                         _connectionString.SqlConnectionName);
         }
 
-        public async Task<NoteModel> GetNoteById(int noteId)
+        public Task<List<NoteModel>> All()
         {
-            var recs = await _dataAccess.LoadData<NoteModel, dynamic>("dbo.spNotes_GetById",
-                new
-                {
-                    Id = noteId
-                },
-                _connectionString.SqlConnectionName);
-
-            return recs.FirstOrDefault();
+            return  _dataAccess.LoadData<NoteModel, dynamic>("dbo.spNotes_All", new { }, _connectionString.SqlConnectionName);
         }
+
+    
     }
 }

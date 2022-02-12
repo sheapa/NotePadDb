@@ -22,7 +22,7 @@ namespace DataLibrary.Models
         [MaxLength(500, ErrorMessage = "You need to keep the title length to a max of 50 Characters")]
         [MinLength(3, ErrorMessage = "You need to enter at least 3 characters for a note")]
         [DisplayName("Note Description")]
-        public string Description { get; set; }
+        public string? Description { get; set; }
 
         public bool Status { get; set; } = false;
 

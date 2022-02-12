@@ -6,7 +6,7 @@ namespace DataLibrary.Data
     {
         Task<int> CreateNote(NoteModel note);
         Task<int> DeleteNote(int noteId);
-        Task<NoteModel> GetNoteById(int noteId);
-        Task<int> UpdateNoteStatus(int noteId, string noteStatus);
+        Task <List<NoteModel>> All();
+        Task<int> UpdateNote(int noteId, string noteDescription);
     }
 }

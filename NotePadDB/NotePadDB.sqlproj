@@ -65,7 +65,7 @@
     <Build Include="dbo\Tables\Notes.sql" />
     <Build Include="dbo\StoredProcedures\spNotes_All.sql" />
     <Build Include="dbo\StoredProcedures\spNotes_Insert.sql" />
-    <Build Include="dbo\StoredProcedures\sp_UpdateStatus.sql" />
+    <Build Include="dbo\StoredProcedures\spNotes_Update.sql" />
     <Build Include="dbo\StoredProcedures\spNotes_Delete.sql" />
     <Build Include="dbo\StoredProcedures\spNotes_GetById.sql" />
   </ItemGroup>
